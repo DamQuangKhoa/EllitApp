@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "10448454225",
+    "firebase_url": "https://ellit-62ea6.firebaseio.com",
+    "project_id": "ellit-62ea6",
+    "storage_bucket": "ellit-62ea6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10448454225:android:2a2b61f8fc76e493",
+        "android_client_info": {
+          "package_name": "com.example.smith.ellit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10448454225-9cav944ku9v6rjtr8pt62mu4od16u4jk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smith.ellit",
+            "certificate_hash": "824d8e2499b16f2e120dc61f796f9b3e6953a2a6"
+          }
+        },
+        {
+          "client_id": "10448454225-aa9rkp3lqdolbjvjqs047ravskg7ql71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv0-QhzhCiEd23fVJHqPtQxZirv1LHEgs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10448454225-aa9rkp3lqdolbjvjqs047ravskg7ql71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
