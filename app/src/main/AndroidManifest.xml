@@ -3,6 +3,12 @@
     package="com.example.smith.ellit">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_INCOMING_CALLS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -11,17 +17,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PhoneActivity"></activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".ContactActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".LandingActivity">
+        <activity android:name=".LandingActivity" />
+        <activity android:name=".GetCallingNumber" />
+        <activity android:name=".PhoneActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver
+            android:name=".BlockOutgoing"
+            android:label=".GetCallingNumber" >
+            <intent-filter android:priority="1">
+
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+
+            </intent-filter>
+        </receiver>
+        <receiver  android:name=".BlockIncoming">
+            <intent-filter  android:priority="100" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
