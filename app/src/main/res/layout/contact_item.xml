@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_70dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/person1" />
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/distance_15dp"
+            android:layout_width="@dimen/promotion_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="top"
+                android:text="Loan Shark"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:text="Singapore"
+                android:textSize="@dimen/text_15sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/country"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:text="+0971493286"
+                android:textSize="@dimen/text_15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icons8_speech_bubble_48"
+            android:background="@null"
+
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

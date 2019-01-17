@@ -2,14 +2,13 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_100"
-    >
+    android:background="@color/grey_100">
 
     <LinearLayout
         android:id="@+id/search"
-        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:background="@drawable/bg_round_corner_blue_background"
         android:gravity="center"
         android:paddingStart="@dimen/distance_32dp"
@@ -51,10 +50,10 @@
         android:weightSum="3">
 
         <LinearLayout
+            android:id="@+id/contact_linear"
             android:layout_width="@dimen/promotion_0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/bg_gradient_blue"
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="3">
@@ -109,6 +108,7 @@
             android:layout_width="@dimen/promotion_0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/bg_gradient_blue"
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="3">
@@ -132,56 +132,66 @@
                 android:src="@drawable/icons8_circled_3_24" />
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
-        android:layout_below="@+id/tab"
-        android:layout_above="@+id/footer"
+        android:id="@+id/list_message"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnTest"
+        android:layout_below="@+id/tab">
 
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/list_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="535dp" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_40dp"
+        android:layout_above="@id/footer"
+        android:background="@drawable/bg_round_corner_button_blue_stroke_background"
+        android:text="Contacts"
+        android:textColor="@color/whiteThree" />
 
 
-<LinearLayout
+    <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/distance_40dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bg_round_corner_blue_background"
         android:orientation="horizontal"
         android:weightSum="3">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/nav_home"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/icons8_speech_bubble_48"
+            android:background="@drawable/bg_gradient_blue"
             android:padding="@dimen/distance_10dp"
-             />
+            android:src="@drawable/icons8_speech_bubble_48" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/nav_bookmark"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/icons8_phone_48"
+            android:background="@drawable/bg_gradient_blue"
             android:padding="@dimen/distance_10dp"
-            />
+            android:src="@drawable/icons8_phone_48" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/nav_notify"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/icons8_contacts_48"
+            android:background="@drawable/bg_gradient_blue"
             android:padding="@dimen/distance_10dp"
-            />
+            android:src="@drawable/icons8_contacts_48" />
 
     </LinearLayout>
 </RelativeLayout>

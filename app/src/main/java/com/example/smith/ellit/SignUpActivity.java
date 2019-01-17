@@ -1,5 +1,6 @@
 package com.example.smith.ellit;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -44,7 +45,9 @@ public class SignUpActivity extends  BaseActivity implements
         // [END initialize_auth]
 
     }
-
+    public void startApp(){
+        startActivity( new Intent(SignUpActivity.this,HomeActivity.class));
+    }
     @Override
     public void onStart() {
         super.onStart();
@@ -95,7 +98,7 @@ public class SignUpActivity extends  BaseActivity implements
             return;
         }
 
-//        showProgressDialog();
+        showProgressDialog();
 
         // [START sign_in_with_email]
         mAuth.signInWithEmailAndPassword(email, password)
@@ -106,7 +109,7 @@ public class SignUpActivity extends  BaseActivity implements
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-//                            updateUI(user);
+                            startApp();
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());

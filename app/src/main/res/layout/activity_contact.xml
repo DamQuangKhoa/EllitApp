@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100">
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_round_corner_blue_background"
+        android:gravity="center"
+        android:paddingStart="@dimen/distance_32dp"
+        android:paddingTop="@dimen/distance_19dp"
+        android:paddingEnd="@dimen/distance_32dp"
+        android:paddingBottom="@dimen/distance_20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:background="@drawable/bg_round_corner_edittext_white"
+                android:hint="@string/text_search"
+                android:paddingStart="@dimen/distance_19dp"
+                android:paddingEnd="@dimen/distance_40dp"
+                android:textColor="#59000000"
+                android:textSize="@dimen/text_12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search" />
+        </RelativeLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_below="@+id/search"
+   android:layout_above="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_round_corner_blue_background"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/distance_5dp"
+            android:src="@drawable/icons8_speech_bubble_48" />
+
+        <ImageView
+            android:id="@+id/nav_bookmark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/distance_5dp"
+            android:src="@drawable/icons8_phone_48" />
+
+        <ImageView
+            android:id="@+id/nav_notify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/distance_5dp"
+            android:src="@drawable/icons8_contacts_48" />
+
+    </LinearLayout>
+
+</RelativeLayout>

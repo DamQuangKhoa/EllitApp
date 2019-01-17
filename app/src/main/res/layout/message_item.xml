@@ -15,7 +15,7 @@
           android:layout_width="0dp"
           android:layout_height="match_parent"
          android:background="@null"
-          android:src="@drawable/avatar"
+          android:src="@drawable/scammer"
           />
      <LinearLayout
          android:background="@color/cardview_light_background"
@@ -41,28 +41,33 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_15sp"
                 />
+
              <TextView
-                android:layout_alignParentEnd="true"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/txt_date"
-                android:textStyle="bold"
-                android:textSize="@dimen/text_15sp"
-                />
+                 android:id="@+id/txtDate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentEnd="true"
+                 android:text="@string/txt_date"
+                 android:textSize="@dimen/text_15sp"
+                 android:textStyle="bold" />
          </RelativeLayout>
-        <TextView
-            android:textStyle="bold"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:text="KING855 ONLINE LIVE CASINO ,Sport test spam"
-            android:layout_height="@dimen/promotion_0dp" />
+
          <TextView
-            android:textStyle="bold"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:text="13 Spam reports"
+             android:id="@+id/txtContent"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/promotion_0dp"
+             android:layout_weight="1"
+             android:text="KING855 ONLINE LIVE CASINO ,Sport test spam"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/txtCount"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/promotion_0dp"
+             android:layout_weight="1"
+             android:text="13 Spam reports"
              android:textColor="@color/red"
-            android:layout_height="@dimen/promotion_0dp" />
+             android:textStyle="bold" />
 
      </LinearLayout>
    </LinearLayout>

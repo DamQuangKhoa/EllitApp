@@ -43,60 +43,269 @@
     <LinearLayout
         android:id="@+id/intro"
         android:layout_width="match_parent"
-        android:padding="@dimen/distance_10dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/search"
-        android:weightSum="5"
-        android:orientation="horizontal">
-       <ImageView
-           android:layout_weight="1"
-           android:layout_width="0dp"
-           android:src="@drawable/icons8_male_user_96"
-           android:layout_height="match_parent" />
+        android:orientation="horizontal"
+        android:padding="@dimen/distance_10dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icons8_male_user_96" />
+
         <TextView
-            android:layout_weight="4"
             android:layout_width="@dimen/promotion_0dp"
             android:layout_height="match_parent"
+            android:layout_weight="4"
             android:text="@string/text_call_intro"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
-        android:padding="@dimen/distance_10dp"
-        android:orientation="vertical"
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/footer"
-        android:layout_below="@+id/intro">
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Today"
-           android:textSize="20sp"
-           android:textStyle="bold"
-           android:layout_marginBottom="@dimen/distance_10dp"
-           />
-     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/search"
-        android:weightSum="5"
-        android:orientation="horizontal">
-       <ImageView
-           android:layout_weight="1"
-           android:layout_width="0dp"
-           android:src="@drawable/icons8_male_user_96"
-           android:layout_height="match_parent" />
+        android:layout_below="@+id/intro"
+        android:orientation="vertical"
+        android:padding="@dimen/distance_10dp">
+
         <TextView
-            android:layout_weight="4"
-            android:layout_width="@dimen/promotion_0dp"
-            android:layout_height="match_parent"
-            android:text="@string/text_call_intro"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_10dp"
+            android:text="Today"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icons8_male_user_96" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:padding="@dimen/distance_10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Ted Mosby Alan Worker"
+                    android:textColor="@color/black80"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/promotion_0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7:06AM" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_10dp"
+                        android:text="6389 2750" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/promotion_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="@dimen/promotion_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icons8_contacts_48" />
+
+                <ImageView
+                    android:layout_width="@dimen/promotion_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icons8_phone_48" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_10dp"
+            android:text="Yesterday"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icons8_male_user_96" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:padding="@dimen/distance_10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="United Mashow Worker"
+                    android:textColor="@color/black80"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/promotion_0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7:06AM" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_10dp"
+                        android:text="6389 2750" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/promotion_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="@dimen/promotion_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icons8_contacts_48" />
+
+                <ImageView
+                    android:layout_width="@dimen/promotion_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icons8_phone_48" />
+            </LinearLayout>
+
+        </LinearLayout>
+         <LinearLayout
+             android:layout_marginTop="@dimen/distance_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/icons8_male_user_96" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:padding="@dimen/distance_10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Barney Stingson Worker"
+                    android:textColor="@color/black80"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/promotion_0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:06AM" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_10dp"
+                        android:text="0909 6589 2750" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/promotion_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="@dimen/promotion_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icons8_contacts_48" />
+
+                <ImageView
+                    android:layout_width="@dimen/promotion_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icons8_phone_48" />
+            </LinearLayout>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -104,7 +313,7 @@
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/distance_30dp"
+        android:layout_height="@dimen/distance_40dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bg_round_corner_blue_background"
         android:orientation="horizontal"
